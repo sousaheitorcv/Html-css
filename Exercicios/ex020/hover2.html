@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alguma coisa</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to left, rgba(0, 89, 255, 0.555), rgba(16, 16, 143, 0.534), rgba(128, 0, 128, 0.582), rgba(255, 0, 0, 0.63) )
+        }
+        div > p {
+            display: none;
+        }
+        div:hover > p {
+            display: block;
+            background-color: rgb(10, 9, 9);
+            width: 256px;
+        }
+        div:hover{
+            color: rgb(0, 143, 0);
+        }
+        a:hover{
+            text-decoration: underline ;
+        }
+        a:active{
+            color: yellow;
+        }
+        a{
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a::after{
+            content: ' ⇐';
+        }
+        a::before{
+            content: '⇒ ';
+        }
+        img{
+            width: 400px;
+            height: 200px;
+            position: absolute;
+            top: 255px;
+          
+        
+    </style>
+</head>
+<body>
+    <h1>Testando</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Palmeiras tem mundial?
+        <p><a href="https://ge.globo.com">Não, o Palmeiras não tem mundial KKKKKKK</a></p>
+    </div>
+    <img src="https://i.superesportes.com.br/N3d6e4PIU2cb9WT_HnpyUUQhm7w=/650x0/smart/imgsapp.mg.superesportes.com.br/app/noticia_126420360808/2022/02/12/3959324/meme-da-derrota-do-palmeiras-para-o-chelsea-na-final-do-mundial-de-clubes-da-fifa_1_31533.jpg" alt="">
+</body>
+</html>
