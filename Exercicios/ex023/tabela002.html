@@ -1,55 +1,72 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tabela</title>
+    <title>Tabelas</title>
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
-            font-weight: bold;
+
         }
         table{
-            border: 5px solid black;
-            box-shadow: 2px 2px 2px 2px black;
-            width: 400px;
+            width: 500px;
             border-collapse: collapse;
         }
-        td{
-            border: 2px solid black;
-            padding: 8px;
+        td, th{
+            border: 1px solid black;
+            padding:10px ;
         }
-        tr{
-            background-color: rgba(0, 0, 255, 0.568);
+        td.num{
+            text-align: right;
         }
-        tr.linha{
+        thead, tfoot{
             background-color: gray;
+            color: white;
         }
-        tr.linha_dois{
-            background-color: aqua;
-        }
-
     </style>
 </head>
 <body>
-    <h1>Minha segunda tabela</h1>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        Anatomia para tabelas grandes
+        table
+            thead
+                tr, td, th
+            tbody
+                tr, td, th
+            thead
+                tr, td, th
+    -->
     <table>
-        <tr class="linha">
-            <td>A1</a></td>
-            <td>B1</td>
-            <td>C1</td>
-        </tr>
-        <tr>
-            <td>A2</td>
-            <td>B2</td>
-            <td>C2</td>
-        </tr>
-        <tr class="linha_dois">
-            <td>A3</td>
-            <td>B3</td>
-            <td>C3</td>
-        </tr>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num"> 21 160 701</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de Habitantes</th>
+                <td class="num"><strong>0000</strong></td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 </html>
